@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@color/myColorBlack"
+    tools:context="com.example.siamakmohsenisam.schedule.com.example.siamakmohsenisam.schedule.AnyUserActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/box"
+
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mario4" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextNameR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Name : any word"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/myColor"
+                    android:textColorHint="@color/myColorH"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="+1(999)999-9999"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/myColor"
+                    android:textColorHint="@color/myColorH"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextEmailR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Any@any.any"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/myColor"
+                    android:textColorHint="@color/myColorH"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" Availabilities"
+                    android:textColor="@color/myColor2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="  Task"
+                    android:textColor="@color/myColor2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxR0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8 - 19"
+                        android:buttonTint="@color/myColor2"
+                        android:textColor="@color/myColor"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxR1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="17 - 01"
+                        android:buttonTint="@color/myColor2"
+                        android:textColor="@color/myColor"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01 - 08"
+                        android:buttonTint="@color/myColor2"
+                        android:textColor="@color/myColor"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxR3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Week end"
+                        android:buttonTint="@color/myColor2"
+                        android:textColor="@color/myColor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
+                            <TextView
+                                android:id="@+id/textViewTaskR"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/myColor"
+                                android:textSize="17sp" />
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonRegisterR"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/myColorBlack"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/register" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonShowR"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/myColorBlack"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/show2" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

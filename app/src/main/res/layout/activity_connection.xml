@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myColorBlack"
+    tools:context="com.example.siamakmohsenisam.schedule.com.example.siamakmohsenisam.schedule.ConnectionActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/box"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/mario" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextEmail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/myColor"
+                    android:textColorHint="@color/myColorH"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextPassword1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/myColor"
+                    android:textColorHint="@color/myColorH"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/buttonConnect"
+                android:layout_width="80dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="30dp"
+                android:layout_height="80dp"
+                android:background="@color/myColorBlack"
+                app:srcCompat="@drawable/login" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

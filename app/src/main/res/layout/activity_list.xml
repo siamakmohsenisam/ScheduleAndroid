@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColorBlack"
+    android:orientation="vertical"
+    tools:context="com.example.siamakmohsenisam.schedule.com.example.siamakmohsenisam.schedule.ListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mario2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/box"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxL0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/myColor2"
+                android:text="8 - 19"
+                android:textColor="@color/myColor"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/myColor2"
+                android:text="17 - 01"
+                android:textColor="@color/myColor"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/myColor2"
+                android:text="01 - 08"
+                android:textColor="@color/myColor"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/myColor2"
+                android:text="Week end"
+                android:textColor="@color/myColor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ListView
+                android:id="@+id/listViewL"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButtonShowL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/myColorBlack"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/show2" />
+    </LinearLayout>
+</LinearLayout>
